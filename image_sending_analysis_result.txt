@@ -1,0 +1,21 @@
+671096bytes
+682311bytes
+711308bytes
+700108bytes
+724900bytes
+718808bytes
+699761bytes
+730821bytes
+697089bytes
+692551bytes
+724411bytes
+728459bytes
+694193bytes
+706835bytes
+720326bytes
+727315bytes
+700198bytes
+719637bytes
+579651bytes
+
+Average: 701567.2631578947bytes/sec
