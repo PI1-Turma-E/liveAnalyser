@@ -27,16 +27,21 @@ while True:
 
 result_file = open('analysis_result.txt', 'w')
 
-for index, each in enumerate(data_size):
-    result_file.write(str(index) + ': ' + str(each) + ' bytes' + '\n')
+data_size = np.array(data_size)/1000
 
-result_file.write('\nAverage: ' + str(sum(data_size)/len(data_size)) + 'bytes/sec\n')
+for index, each in enumerate(data_size):
+    result_file.write('Time: ' + str(index) + 's - Data: ' + str(each) + ' Kb' + '\n')
+
+result_file.write('\nAverage: ' + str(sum(data_size)/len(data_size)) + ' kbps\n')
 
 result_file.close()
 
 X = np.linspace(1, len(data_size), len(data_size))
 
 plt.plot(X, data_size)
+plt.ylabel('data quantity (kilobytes)')
+plt.xlabel('time elapsed (seconds)')
+plt.tight_layout()
 plt.savefig('analysis_result.png')
 
 print("\nAnalysis finished!\n")
