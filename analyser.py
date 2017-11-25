@@ -36,6 +36,7 @@ for index, each in enumerate(image_data):
     image_result_file.write('Time: ' + str(index) + 's - Data: ' + str(each) + ' Kb' + '\n')
 
 image_result_file.write('\nAverage: ' + str(sum(image_data)/len(image_data)) + ' kbps\n')
+image_result_file.close()
 
 control_result_file = open('control_data_result.txt', 'w')
 control_data = np.array(control_data)/1000
@@ -44,14 +45,22 @@ for index, each in enumerate(control_data):
     control_result_file.write('Time: ' + str(index) + 's - Data: ' + str(each) + ' Kb' + '\n')
 
 control_result_file.write('\nAverage: ' + str(sum(control_data)/len(control_data)) + ' kbps\n')
-
-image_result_file.close()
 control_result_file.close()
+
+total_result_file = open('total_data_result.txt', 'w')
+
+for index, each in enumerate(control_data+image_data):
+    total_result_file.write('Time: ' + str(index) + 's - Data: ' + str(each) + ' Kb' + '\n')
+
+total_result_file.write('\nAverage: ' + str(sum(control_data+image_data)/len(control_data)) + ' kbps\n')
+total_result_file.close()
+
 
 X = np.linspace(1, len(image_data), len(image_data))
 
 plt.plot(X, image_data, 'r', label='Image data')
 plt.plot(X, control_data, 'b', label='Control data')
+plt.plot(X, image_data+control_data, 'k', label='Total data')
 
 plt.ylabel('data quantity (kilobytes)')
 plt.xlabel('time elapsed (seconds)')
