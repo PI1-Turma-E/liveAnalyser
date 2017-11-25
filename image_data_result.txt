@@ -1,0 +1,34 @@
+Time: 0s - Data: 460.357 Kb
+Time: 1s - Data: 710.301 Kb
+Time: 2s - Data: 474.125 Kb
+Time: 3s - Data: 431.374 Kb
+Time: 4s - Data: 362.171 Kb
+Time: 5s - Data: 361.617 Kb
+Time: 6s - Data: 348.418 Kb
+Time: 7s - Data: 428.303 Kb
+Time: 8s - Data: 464.342 Kb
+Time: 9s - Data: 452.023 Kb
+Time: 10s - Data: 419.072 Kb
+Time: 11s - Data: 517.888 Kb
+Time: 12s - Data: 484.822 Kb
+Time: 13s - Data: 408.724 Kb
+Time: 14s - Data: 458.125 Kb
+Time: 15s - Data: 503.211 Kb
+Time: 16s - Data: 427.348 Kb
+Time: 17s - Data: 458.524 Kb
+Time: 18s - Data: 534.351 Kb
+Time: 19s - Data: 482.598 Kb
+Time: 20s - Data: 420.006 Kb
+Time: 21s - Data: 485.299 Kb
+Time: 22s - Data: 446.518 Kb
+Time: 23s - Data: 456.43 Kb
+Time: 24s - Data: 427.42 Kb
+Time: 25s - Data: 513.384 Kb
+Time: 26s - Data: 507.26 Kb
+Time: 27s - Data: 414.915 Kb
+Time: 28s - Data: 483.515 Kb
+Time: 29s - Data: 483.416 Kb
+Time: 30s - Data: 498.246 Kb
+Time: 31s - Data: 166.787 Kb
+
+Average: 452.8403125 kbps
